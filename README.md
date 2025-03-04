@@ -150,10 +150,11 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 # Part 1: Analyze Windows Attack Logs
 
 ## Task 1: Report Analysis for Severity
-- Accessed the "Reports" tab and selected the report for analyzing severities.
-- Changed the source from `windows_server_logs.csv` to `windows_server_attack_logs.csv`.
-- Saved and reviewed the updated results.
-- Answered the review question on whether any suspicious changes in severity were detected.
+
+![Screenshot 2025-02-27 at 1 18 16 PM](https://github.com/user-attachments/assets/f4305d93-cc7f-4e88-bc70-625393b88add)
+
+### Findings
+
 
 ## Task 2: Report Analysis for Failed Activities
 - Accessed the "Reports" tab and selected the report for analyzing activities.
@@ -287,9 +288,4 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 
 ---
 
-### Completed Tasks Checklist:
-- Loaded Apache attack logs into Splunk.
-- Analyzed reports for HTTP methods, referrer domains, and HTTP response codes.
-- Reviewed alerts for international activity and HTTP POST activity.
-- Updated and analyzed Apache Web Server Monitoring dashboard.
 
