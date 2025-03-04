@@ -3,8 +3,11 @@
 ## Description  
 This project involves setting up and utilizing Splunk as a security monitoring solution to investigate cyberattacks. The objective will be to analyze logs from Windows and Apache servers, detect suspicious activities, and assess the effectiveness of security measures. Tasks include log ingestion, report generation, alert configuration, dashboard creation, and incident analysis to identify threats and anomalies. 
 
-## Operating System  
-- **Linux**  
+## Key Components  
+- **Splunk** for log analysis, reporting, and alert configuration  
+- **Apache Server Logs** and **Windows Logs** for investigating web and system-based attacks  
+- **Linux Server** for hosting the environment and analyzing logs  
+- **SIEM System** for threat detection and optimization  
 
 ## Skills Gained and Exercised  
 
