@@ -147,63 +147,63 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 # Splunk Defensive Solution: Attack Activity
 
 
-# Part 1: Analyze Windows Attack Logs
+## Part 1: Analyze Windows Attack Logs
 
-## Task 1: Report Analysis for Severity
+### Task 1: Report Analysis for Severity
 
 ![Screenshot 2025-02-27 at 1 18 16 PM](https://github.com/user-attachments/assets/f4305d93-cc7f-4e88-bc70-625393b88add)
 
 ### Findings
 
 
-## Task 2: Report Analysis for Failed Activities
+### Task 2: Report Analysis for Failed Activities
 - Accessed the "Reports" tab and selected the report for analyzing activities.
 - Changed the source from `windows_server_logs.csv` to `windows_server_attack_logs.csv`.
 - Saved and reviewed the updated results.
 - Answered the review question on whether any suspicious changes in failed activities were detected.
 
-## Task 3: Alert Analysis for Failed Windows Activity
+### Task 3: Alert Analysis for Failed Windows Activity
 - Accessed the "Alerts" tab and selected the alert for suspicious volume of failed activities.
 - Changed the source from `windows_server_logs.csv` to `windows_server_attack_logs.csv`.
 - Reviewed the updated results and answered the review questions:
   - Detected the volume of failed activity and identified the count and time.
   - Assessed if the alert would be triggered and determined whether the threshold needed adjustments.
 
-## Task 4: Alert Analysis for Successful Logins
+### Task 4: Alert Analysis for Successful Logins
 - Accessed the "Alerts" tab and selected the alert for suspicious volume of successful logins.
 - Changed the source from `windows_server_logs.csv` to `windows_server_attack_logs.csv`.
 - Reviewed the updated results and answered the review questions:
   - Detected the volume of successful logins, identified the primary user, and assessed the time.
   - Determined whether the alert would be triggered and whether the threshold needed adjustments.
 
-## Task 5: Alert Analysis for Deleted Accounts
+### Task 5: Alert Analysis for Deleted Accounts
 - Accessed the "Alerts" tab and selected the alert for suspicious volume of deleted accounts.
 - Changed the source from `windows_server_logs.csv` to `windows_server_attack_logs.csv`.
 - Reviewed the updated results and answered the review question on whether any suspicious volume of deleted accounts was detected.
 
-## Task 6: Dashboard Setup
+### Task 6: Dashboard Setup
 - Accessed the **Windows Web Server Monitoring** dashboard and edited the panels.
 - For each panel, changed the source from `windows_server_logs.csv` to `windows_server_attack_logs.csv`.
 - Saved the updated dashboard and set the time range to "All Time."
 
-## Task 7: Dashboard Analysis for Time Chart of Signatures
+### Task 7: Dashboard Analysis for Time Chart of Signatures
 - Analyzed the **Time Chart for Signatures** panel and answered the following review questions:
   - Identified any suspicious patterns.
   - Determined the signatures that stood out and the times of suspicious activity.
   - Noted the peak count for each signature.
 
-## Task 8: Dashboard Analysis for Users
+### Task 8: Dashboard Analysis for Users
 - Analyzed the **Users** panel and answered the following review questions:
   - Identified any suspicious users and the times of their suspicious activity.
   - Determined the peak count for each user during the attack.
 
-## Task 9: Dashboard Analysis for Signatures with Bar, Graph, and Pie Charts
+### Task 9: Dashboard Analysis for Signatures with Bar, Graph, and Pie Charts
 - Analyzed the **Bar, Graph, and Pie Charts** for signatures and compared the results to the time chart for signatures.
 
-## Task 10: Dashboard Analysis for Users with Bar, Graph, and Pie Charts
+### Task 10: Dashboard Analysis for Users with Bar, Graph, and Pie Charts
 - Analyzed the **Bar, Graph, and Pie Charts** for users and compared the results to the time chart for users.
 
-## Task 11: Dashboard Analysis for Users with Statistical Charts
+### Task 11: Dashboard Analysis for Users with Statistical Charts
 - Analyzed the **Statistical Charts** for users and answered the review question on the advantages and disadvantages compared to the other user panels.
 
 
@@ -212,9 +212,9 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 # Splunk Defensive Solution: Attack Activity
 
 
-# Part 2: Analyze Apache Attack Logs
+## Part 2: Analyze Apache Attack Logs
 
-## Task 1: Report Analysis for Methods
+### Task 1: Report Analysis for Methods
 1. **Accessed the “Reports” tab** and selected the report analyzing HTTP methods.
 2. **Opened the report in search mode** by selecting “Edit” > “Open in Search.”
 3. **Took note of the percentage and count of various HTTP methods.**
@@ -224,7 +224,7 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
    - Detected changes in HTTP methods: [Answer here]
    - Method used for the attack: [Answer here]
 
-## Task 2: Report Analysis for Referrer Domains
+### Task 2: Report Analysis for Referrer Domains
 1. **Accessed the “Reports” tab** and selected the report analyzing referrer domains.
 2. **Opened the report in search mode** by selecting “Edit” > “Open in Search.”
 3. **Noted the referrer domains** and changed the source from `apache_logs.txt` to `apache_attack_logs.txt`.
@@ -232,7 +232,7 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 5. **Reviewed the updated results** and noted if there were any suspicious changes in referrer domains.
    - Detected suspicious changes in referrer domains: [Answer here]
 
-## Task 3: Report Analysis for HTTP Response Codes
+### Task 3: Report Analysis for HTTP Response Codes
 1. **Accessed the “Reports” tab** and selected the report analyzing HTTP response codes.
 2. **Opened the report in search mode** by selecting “Edit” > “Open in Search.”
 3. **Took note of the HTTP response codes** and changed the source from `apache_logs.txt` to `apache_attack_logs.txt`.
@@ -240,7 +240,7 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 5. **Reviewed the updated results** and noted if there were any suspicious changes in HTTP response codes.
    - Detected suspicious changes in HTTP response codes: [Answer here]
 
-## Task 4: Alert Analysis for International Activity
+### Task 4: Alert Analysis for International Activity
 1. **Accessed the “Alerts” tab** and selected the alert for suspicious international activity.
 2. **Opened the alert in search mode** by selecting “Open in Search.”
 3. **Changed the source from `apache_logs.txt` to `apache_attack_logs.txt`.**
@@ -250,7 +250,7 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
    - Would the alert be triggered for this activity? [Answer here]
    - Would you change the threshold? [Answer here]
 
-## Task 5: Alert Analysis for HTTP POST Activity
+### Task 5: Alert Analysis for HTTP POST Activity
 1. **Accessed the “Alerts” tab** and selected the alert for suspicious HTTP POST activity.
 2. **Opened the alert in search mode** by selecting “Open in Search.”
 3. **Changed the source from `apache_logs.txt` to `apache_attack_logs.txt`.**
@@ -267,20 +267,20 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
    - **Applied the changes** and saved the updated dashboard.
 3. **Set the dashboard time range to “All Time”** for comprehensive analysis.
 
-## Task 6: Dashboard Analysis for Time Chart of HTTP Methods
+### Task 6: Dashboard Analysis for Time Chart of HTTP Methods
 1. **Analyzed the new dashboard results** and answered the following questions:
    - Did anything stand out as suspicious? [Answer here]
    - Which method seems to be used in the attack? [Answer here]
    - At what times did the attack start and stop? [Answer here]
    - What is the peak count of the top method during the attack? [Answer here]
 
-## Task 7: Dashboard Analysis for Cluster Map
+### Task 7: Dashboard Analysis for Cluster Map
 1. **Analyzed the cluster map results** and answered the following questions:
    - Does anything stand out as suspicious? [Answer here]
    - Which new location (city, country) on the map has a high volume of activity? [Answer here]
    - What is the count of that city? [Answer here]
 
-## Task 8: Dashboard Analysis for URI Data
+### Task 8: Dashboard Analysis for URI Data
 1. **Analyzed the URI data panel** and answered the following questions:
    - Does anything stand out as suspicious? [Answer here]
    - What URI is hit the most? [Answer here]
