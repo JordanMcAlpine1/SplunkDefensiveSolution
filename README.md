@@ -154,7 +154,7 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 ![Screenshot 2025-02-27 at 1 18 16 PM](https://github.com/user-attachments/assets/f4305d93-cc7f-4e88-bc70-625393b88add)
 
 ### Findings
-
+- There was an increase in `high` severity events during the attack (329 to 1111)
 
 ### Task 2: Report Analysis for Failed Activities
 - Accessed the "Reports" tab and selected the report for analyzing activities.
