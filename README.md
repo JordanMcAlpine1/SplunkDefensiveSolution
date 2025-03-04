@@ -140,7 +140,5 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 - **Installed and Configured Add-On**: Installed the add-on app and described how its features would help protect VSI.
 - **Scenario**: Provided a use case showing how the add-on app helps with security monitoring.
 
-![Screenshot 2025-03-03 at 11 05 52 AM](https://github.com/user-attachments/assets/7d549917-803e-4442-ab66-2e30b4762c63)
-![Screenshot 2025-03-03 at 11 07 54 AM](https://github.com/user-attachments/assets/ebc95006-fa21-4f2a-bc0b-5ba809bb3492)
 
-
+---
