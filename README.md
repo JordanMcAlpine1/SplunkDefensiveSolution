@@ -1,23 +1,34 @@
 # Splunk Defensive Solution
 
 ## Description  
-
-This lab involves performing a series of investigative tasks, including password recovery, user account penetration, log file analysis, file permission auditing, debugging scripts, inspecting custom aliases, exploiting vulnerabilities for root access, and password cracking to gather and decode all flags.  
+This project involves setting up and utilizing Splunk as a security monitoring solution to investigate cyberattacks. The objective will be to analyze logs from Windows and Apache servers, detect suspicious activities, and assess the effectiveness of security measures. Tasks include log ingestion, report generation, alert configuration, dashboard creation, and incident analysis to identify threats and anomalies. 
 
 ## Operating System  
-
 - **Linux**  
 
-## Skills Gained and Excercised
+## Skills Gained and Exercised  
 
-- **Linux Command-Line Proficiency**
-  - Gained expertise in navigating file systems, managing permissions, and using powerful tools like `grep`, `nano`, and `sudo` for effective system administration.
-  
-- **Scripting and Debugging**
-  - Enhanced ability to write, execute, and troubleshoot Bash scripts, including identifying and fixing syntax errors and logical issues.
- 
-- **Provilege Escalation Techniques**
-  - Learned how to exploit misconfigurations to elevate privileges, including leveraging `sudo` permissions and manipulating user aliases.
- 
-- **Password Hash Analysis and Cracking**
-  - Acquired knowledge of hashing mechanisms and utilized tools like `john` to crack hashed passwords for cybersecurity analysis.
+- **Log Analysis and Threat Detection**  
+  - Learned to ingest, search, and analyze logs using Splunk to detect security incidents, unauthorized access, and system anomalies.
+
+- **Security Monitoring and Incident Response**  
+  - Developed skills in monitoring critical systems, identifying attack patterns, and responding to security breaches by analyzing attack logs.
+
+- **Report Generation and Data Interpretation**  
+  - Created and analyzed Splunk reports to understand security trends, detect anomalies, and assess the severity of threats.
+
+- **Alert Configuration and Tuning**  
+  - Configured Splunk alerts to detect suspicious login attempts, failed access activities, and privilege escalation attempts.
+
+- **Dashboard Creation and Visualization**  
+  - Built interactive dashboards to visualize attack data, monitor critical security metrics, and enhance decision-making for threat mitigation.
+
+- **Account Security and Suspicious Activity Detection**  
+  - Monitored logs for unusual user behavior, such as failed logins and unauthorized access, to detect potential account compromises.
+
+- **HTTP Traffic and Web Server Attack Analysis**  
+  - Investigated Apache attack logs, analyzed HTTP methods, referrer domains, and response codes to detect potential web-based attacks.
+
+- **SIEM Configuration and Optimization**  
+  - Gained hands-on experience in configuring a Security Information and Event Management (SIEM) solution, optimizing search queries, and ensuring accurate threat detection.
+
