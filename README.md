@@ -30,7 +30,7 @@ This project involves setting up and utilizing Splunk as a security monitoring s
   - Monitored logs for unusual user behavior, such as failed logins and unauthorized access, to detect potential account compromises.
 
 - **HTTP Traffic and Web Server Attack Analysis**  
-  - Investigated Apache attack logs, analyzed HTTP methods, referrer domains, and response codes to detect potential web-based attacks.
+  - Investigated Windows and Apache attack logs, analyzed HTTP methods, referrer domains, and response codes to detect potential web-based attacks.
 
 - **SIEM Configuration and Optimization**  
   - Gained hands-on experience in configuring a Security Information and Event Management (SIEM) solution, optimizing search queries, and ensuring accurate threat detection.
