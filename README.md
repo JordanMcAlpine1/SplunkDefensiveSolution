@@ -202,22 +202,56 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 - Notable signatures:
   - `A user account was locked out` | Timeframe: 1:00 am - 2:00 am | Peak Count: 896
   - `An attempt was made to reset an accounts password` | Timeframe: 9:00 am - 10:00 am | Peak Count: 1258
-  - `An account was successfully logged on` | Timeframe: 11:00 am | Peak Count: 196 
+  - `An account was successfully logged on` | Timeframe: 11:00 am | Peak Count: 196
+- The signature ID for Windows Successful Login did not match the label for signature activity in the dataset and therefore did not trigger an alert.
 
 ### Task 8: Dashboard Analysis for Users
-- Analyzed the **Users** panel and answered the following review questions:
-  - Identified any suspicious users and the times of their suspicious activity.
-  - Determined the peak count for each user during the attack.
+
+![Screenshot 2025-03-03 at 12 16 26 PM](https://github.com/user-attachments/assets/9e3b0eb4-6950-4a90-a3e7-d02a8dba5bb2)
+![Screenshot 2025-03-03 at 12 16 45 PM](https://github.com/user-attachments/assets/cc6bbc72-f496-4d1c-8beb-73243fed0a83)
+![Screenshot 2025-03-03 at 12 17 06 PM](https://github.com/user-attachments/assets/a5edba8f-687a-474e-8d0d-c8624ecaf4be)
+
+### Findings
+- Notable users:
+  - user_a | Timeframe: 1:00 am - 2:00 am | Peak Count: 984
+  - user_k | Timeframe: 9:00 am - 10:00 am | Peak Count: 1256
+  - user_j | Timeframe: 11:00 am | Peak Count: 196
 
 ### Task 9: Dashboard Analysis for Signatures with Bar, Graph, and Pie Charts
-- Analyzed the **Bar, Graph, and Pie Charts** for signatures and compared the results to the time chart for signatures.
+
+![Screenshot 2025-03-03 at 12 17 43 PM](https://github.com/user-attachments/assets/2414366f-6db1-441a-8a39-893e2ddd347b)
+![Screenshot 2025-03-03 at 12 18 00 PM](https://github.com/user-attachments/assets/4cb6562a-d8dd-4ebb-87a5-c10f4b0411c5)
+![Screenshot 2025-03-03 at 12 18 20 PM](https://github.com/user-attachments/assets/7e0238bb-11f2-44f2-8299-5ce09a554e4a)
+
+### Findings
+- The piechart breakdown of the signature count aligns with the findings from the time chart data for signature activity.
 
 ### Task 10: Dashboard Analysis for Users with Bar, Graph, and Pie Charts
-- Analyzed the **Bar, Graph, and Pie Charts** for users and compared the results to the time chart for users.
 
-### Task 11: Dashboard Analysis for Users with Statistical Charts
-- Analyzed the **Statistical Charts** for users and answered the review question on the advantages and disadvantages compared to the other user panels.
+![Screenshot 2025-03-03 at 12 18 36 PM](https://github.com/user-attachments/assets/aaedb870-3029-43da-88d5-60b0781a3a8b)
+![Screenshot 2025-03-03 at 12 18 50 PM](https://github.com/user-attachments/assets/3191921e-978a-4a9d-8799-a3ed2066f45c)
+![Screenshot 2025-03-03 at 12 19 09 PM](https://github.com/user-attachments/assets/6a9993d5-4c86-4faa-a86a-9f940ae369f9)
 
+### Findings
+- The piechart breakdown of the user activity aligns with the findings from the time chart data for user activity.
+
+### Task 11: Dashboard Analysis for Users with Statistical Charts: Pros & Cons
+
+### Pros
+- Detailed View – Shows exact numbers and timestamps for user activity.
+- Easy Filtering – You can sort and filter data for deeper analysis.
+- Long-Term Tracking – Helps monitor trends over time.
+- Consistent Data – Uses signature IDs, avoiding issues with Windows updates.
+
+### Cons
+- Harder to Read – A table isn’t as easy to understand as a chart.
+- No Visual Trends – Doesn’t highlight patterns at a glance.
+- More Manual Work – Requires filtering and analysis to find insights.
+
+### Comparison to Other Panels
+- Charts make it easier to spot trends and spikes quickly.
+- Pie/Bar Graphs show comparisons at a glance without manual sorting.
+- Single-Value Metrics provide instant key stats like failed logins.
 
 ---
 
