@@ -342,8 +342,9 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 
 ---
 
-## Windows Attack Summary
+## VSI Web Server Attack Summary
 
+VSI’s web server was hit by a coordinated cyber attack involving brute-force login attempts, reconnaissance scanning, and possible exploitation efforts. A sharp increase in HTTP POST requests, particularly targeting /VSI_Account_logon.php, pointed to a credential stuffing or brute-force attack. Additionally, an unusual spike in traffic from Ukraine suggested the involvement of a foreign threat actor or botnet. The attack also triggered a surge in 404 (Not Found) response codes, indicating that attackers were actively probing for restricted directories and vulnerabilities. The total volume of HTTP requests exceeded normal thresholds, raising concerns about a DDoS or automated high-volume attack. Furthermore, attackers appeared to focus on sensitive URIs and files related to logins and system configurations, potentially aiming for data exfiltration or privilege escalation. Notably, user_a, user_k, and user_j exhibited significant unusual activity, suggesting they were key targets during the attack.
 
 
 ## Apache Attack Summary
