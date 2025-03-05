@@ -172,16 +172,18 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 - There was a spike in `failure` events during the attack, specifically at 8:00 am.
 
 ### Task 4: Alert Analysis for Successful Logins
-- Accessed the "Alerts" tab and selected the alert for suspicious volume of successful logins.
-- Changed the source from `windows_server_logs.csv` to `windows_server_attack_logs.csv`.
-- Reviewed the updated results and answered the review questions:
-  - Detected the volume of successful logins, identified the primary user, and assessed the time.
-  - Determined whether the alert would be triggered and whether the threshold needed adjustments.
+
+![Screenshot 2025-03-04 at 10 38 30 PM](https://github.com/user-attachments/assets/7ba56019-c4f9-4b67-a8ca-a4e1a5021ca5)
+
+### Findings
+- There was no evidence of an unusual amount of successful logins. The threshold for this alert was set to >20 events.
 
 ### Task 5: Alert Analysis for Deleted Accounts
-- Accessed the "Alerts" tab and selected the alert for suspicious volume of deleted accounts.
-- Changed the source from `windows_server_logs.csv` to `windows_server_attack_logs.csv`.
-- Reviewed the updated results and answered the review question on whether any suspicious volume of deleted accounts was detected.
+
+![Screenshot 2025-03-04 at 10 42 29 PM](https://github.com/user-attachments/assets/3805986a-2138-47d5-a853-96bdf9379f8b)
+
+### Findings
+- There was no evidence of an unusual amount of deleted accounts. The threshold for this alert was set to >22 events.
 
 ### Task 6: Dashboard Setup
 - Accessed the **Windows Web Server Monitoring** dashboard and edited the panels.
