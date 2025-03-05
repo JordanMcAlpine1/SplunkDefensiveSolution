@@ -176,7 +176,7 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 ![Screenshot 2025-03-04 at 10 38 30 PM](https://github.com/user-attachments/assets/7ba56019-c4f9-4b67-a8ca-a4e1a5021ca5)
 
 ### Findings
-- There was no evidence of an unusual amount of successful logins. The threshold for this alert was set to >20 events.
+- There was no evidence of an unusual amount of successful logins based on signature ID. The threshold for this alert was set to >20 events.
 
 ### Task 5: Alert Analysis for Deleted Accounts
 
@@ -200,12 +200,9 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 
 ### Findings
 - Notable signatures:
-  - 4740 (User Account Lock Out)
-  - 4724 (Password Reset Attempt)
-  - 
-- The lock out activity occurred between 1 am and 2 am. The password reset activity occurred between 9 am and 10 am. The peak count for the lock out activity was 896 and the peak count for the password reset activity was 1,258.​
-- Another notable signature count during the attack window was "Successful Logon Attempts". This stood out because it was tied to one particular user. The successful login activity occurred at 11 am. The peak count for the successful login activity was 196.​
-- 
+  - `A user account was locked out` | Timeframe: 1:00 am - 2:00 am | Peak Count: 896
+  - `An attempt was made to reset an accounts password` | Timeframe: 9:00 am - 10:00 am | Peak Count: 1258
+  - `An account was successfully logged on` | Timeframe: 11:00 am | Peak Count: 196 
 
 ### Task 8: Dashboard Analysis for Users
 - Analyzed the **Users** panel and answered the following review questions:
