@@ -166,7 +166,7 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 
 ### Task 3: Alert Analysis for Failed Windows Activity
 
-![Screenshot 2025-03-04 at 6 58 21 PM](https://github.com/user-attachments/assets/7acbf927-3b59-46a2-846b-f041aa23dd36)
+![Screenshot 2025-03-05 at 12 35 36 PM](https://github.com/user-attachments/assets/ff33c81f-28aa-4390-9247-bd9b50b24ef3)
 
 ### Findings
 - There was a spike in `failure` events during the attack, specifically at 8:00 am.
