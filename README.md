@@ -185,16 +185,27 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 ### Findings
 - There was no evidence of an unusual amount of deleted accounts. The threshold for this alert was set to >22 events.
 
-### Task 6: Dashboard Setup
-- Accessed the **Windows Web Server Monitoring** dashboard and edited the panels.
-- For each panel, changed the source from `windows_server_logs.csv` to `windows_server_attack_logs.csv`.
-- Saved the updated dashboard and set the time range to "All Time."
+
+
+### Windows Attack Dashboard
+
+![Screenshot 2025-02-27 at 3 56 23 PM](https://github.com/user-attachments/assets/c603f723-4e65-4f02-adda-21f97c1d9296)
+
 
 ### Task 7: Dashboard Analysis for Time Chart of Signatures
-- Analyzed the **Time Chart for Signatures** panel and answered the following review questions:
-  - Identified any suspicious patterns.
-  - Determined the signatures that stood out and the times of suspicious activity.
-  - Noted the peak count for each signature.
+
+![Screenshot 2025-03-03 at 12 15 28 PM](https://github.com/user-attachments/assets/b711cc89-16ed-445c-a945-025743304026)
+![Screenshot 2025-03-03 at 12 15 49 PM](https://github.com/user-attachments/assets/702e93a2-57e7-4f75-86ab-8c09912b22c6)
+![Screenshot 2025-03-03 at 12 16 03 PM](https://github.com/user-attachments/assets/f6c9a7ed-a628-4d9d-a861-d3647a403a38)
+
+### Findings
+- Notable signatures:
+  - 4740 (User Account Lock Out)
+  - 4724 (Password Reset Attempt)
+  - 
+- The lock out activity occurred between 1 am and 2 am. The password reset activity occurred between 9 am and 10 am. The peak count for the lock out activity was 896 and the peak count for the password reset activity was 1,258.​
+- Another notable signature count during the attack window was "Successful Logon Attempts". This stood out because it was tied to one particular user. The successful login activity occurred at 11 am. The peak count for the successful login activity was 196.​
+- 
 
 ### Task 8: Dashboard Analysis for Users
 - Analyzed the **Users** panel and answered the following review questions:
