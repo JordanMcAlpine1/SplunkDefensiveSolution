@@ -333,11 +333,17 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 - Additional research illustrates that the web traffic originated from Kharkiv, Ukraine.
 
 ### Task 8: Dashboard Analysis for URI Data
-1. **Analyzed the URI data panel** and answered the following questions:
-   - Does anything stand out as suspicious? [Answer here]
-   - What URI is hit the most? [Answer here]
-   - Based on the URI being accessed, what could the attacker potentially be doing? [Answer here]
+
+![Screenshot 2025-02-28 at 2 28 56 PM](https://github.com/user-attachments/assets/33d8be27-821e-443d-9c28-407f5db4c9d4)
+![Screenshot 2025-02-28 at 2 29 16 PM](https://github.com/user-attachments/assets/6f8c9b7d-0940-4b1b-9aee-e0286011be72)
+
+### Findings
+- The most targeted URI was `/VSI_Account_logon.php`. Additionally the URI `/files/logstash/logstash-1.3.2-monolithic.jar` had a notably higher count relative to the rest of the most frequently accessed URIs.
 
 ---
 
+## Windows Attack Summary
 
+
+
+## Apache Attack Summary
