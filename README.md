@@ -261,30 +261,31 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 ## Part 2: Analyze Apache Attack Logs
 
 ### Task 1: Report Analysis for Methods
-1. **Accessed the “Reports” tab** and selected the report analyzing HTTP methods.
-2. **Opened the report in search mode** by selecting “Edit” > “Open in Search.”
-3. **Took note of the percentage and count of various HTTP methods.**
-4. **Changed the source from `apache_logs.txt` to `apache_attack_logs.txt`.**
-5. **Saved the updated report** with the new source.
-6. **Reviewed the updated results** and noted if there were any suspicious changes in HTTP methods.
-   - Detected changes in HTTP methods: [Answer here]
-   - Method used for the attack: [Answer here]
+
+![Screenshot 2025-02-28 at 1 15 53 PM](https://github.com/user-attachments/assets/ce20f0ed-65d2-4046-93df-ff4baeb39999)
+
+### Findings
+- There was a significant increase in `POST` HTTP methods during the attack timeframe (106 to 1324).
 
 ### Task 2: Report Analysis for Referrer Domains
-1. **Accessed the “Reports” tab** and selected the report analyzing referrer domains.
-2. **Opened the report in search mode** by selecting “Edit” > “Open in Search.”
-3. **Noted the referrer domains** and changed the source from `apache_logs.txt` to `apache_attack_logs.txt`.
-4. **Saved the updated report** with the new source.
-5. **Reviewed the updated results** and noted if there were any suspicious changes in referrer domains.
-   - Detected suspicious changes in referrer domains: [Answer here]
+
+![Screenshot 2025-02-28 at 1 22 44 PM](https://github.com/user-attachments/assets/bcc5caf6-591a-40ae-862f-808057b1496f)
+
+### Findings
+- There was a significant deacrease in the referring domain count during the attack timeframe.
+- Top 5 notable changes:
+   - http://www.semicomplete.com (3038 to 764)
+   - http://semicomplete.com (2001 to 572)
+   - http://www.google.com (123 to 37)
+   - https://www.google.com (105 to 25)
+   - http://stackoverflow.com (34 to 15)
 
 ### Task 3: Report Analysis for HTTP Response Codes
-1. **Accessed the “Reports” tab** and selected the report analyzing HTTP response codes.
-2. **Opened the report in search mode** by selecting “Edit” > “Open in Search.”
-3. **Took note of the HTTP response codes** and changed the source from `apache_logs.txt` to `apache_attack_logs.txt`.
-4. **Saved the updated report** with the new source.
-5. **Reviewed the updated results** and noted if there were any suspicious changes in HTTP response codes.
-   - Detected suspicious changes in HTTP response codes: [Answer here]
+
+![Screenshot 2025-02-28 at 1 33 22 PM](https://github.com/user-attachments/assets/6bc910ac-0358-4692-beff-6a58a0149166)
+
+### Findings
+- There was a significant increase in `404` HTTP response code count during the attack timeframe (213 to 679).
 
 ### Task 4: Alert Analysis for International Activity
 1. **Accessed the “Alerts” tab** and selected the alert for suspicious international activity.
