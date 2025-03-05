@@ -288,44 +288,49 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 - There was a significant increase in the `404` HTTP response code count during the attack timeframe (213 to 679).
 
 ### Task 4: Alert Analysis for International Activity
-1. **Accessed the “Alerts” tab** and selected the alert for suspicious international activity.
-2. **Opened the alert in search mode** by selecting “Open in Search.”
-3. **Changed the source from `apache_logs.txt` to `apache_attack_logs.txt`.**
-4. **Reviewed the alert results** and answered the following questions:
-   - Detected suspicious volume of international activity: [Answer here]
-   - Count of events in the hour(s): [Answer here]
-   - Would the alert be triggered for this activity? [Answer here]
-   - Would you change the threshold? [Answer here]
+
+![Screenshot 2025-03-05 at 11 25 18 AM](https://github.com/user-attachments/assets/1ac76c70-a2d7-485b-802d-e3a06bd2447f)
+![Screenshot 2025-03-05 at 11 25 51 AM](https://github.com/user-attachments/assets/8ea79123-89e6-42d2-9fde-d847e5b1d853)
+![Screenshot 2025-03-05 at 11 26 09 AM](https://github.com/user-attachments/assets/06aab7ac-dac1-4a14-ab48-b5492cb47aa4)
+
+### Findings
+- There were significant spikes in international activity at 6:00 pm (730) and at 8:00 pm (1415).
+- The alert for this activity would have been triggered as the threshold was set to >137 events.
+
 
 ### Task 5: Alert Analysis for HTTP POST Activity
-1. **Accessed the “Alerts” tab** and selected the alert for suspicious HTTP POST activity.
-2. **Opened the alert in search mode** by selecting “Open in Search.”
-3. **Changed the source from `apache_logs.txt` to `apache_attack_logs.txt`.**
-4. **Reviewed the alert results** and answered the following questions:
-   - Detected suspicious volume of HTTP POST activity: [Answer here]
-   - Count of events in the hour(s): [Answer here]
-   - When did it occur? [Answer here]
-   - Would you change the threshold? [Answer here]
 
-### Dashboard Setup
-1. **Accessed the Apache Web Server Monitoring dashboard** and selected “Edit.”
-2. For each panel:
-   - **Edited the search** to change the source from `apache_logs.txt` to `apache_attack_logs.txt`.
-   - **Applied the changes** and saved the updated dashboard.
-3. **Set the dashboard time range to “All Time”** for comprehensive analysis.
+![Screenshot 2025-03-05 at 11 33 13 AM](https://github.com/user-attachments/assets/6928a83d-6fe9-482f-ae54-2382affd5b88)
+![Screenshot 2025-03-05 at 11 34 04 AM](https://github.com/user-attachments/assets/57be1703-28f3-477f-9db1-55992ab4496e)
+
+### Findings
+- There was a significant spike in HTTP `POST` activity at 8:00 pm (1296).
+- The alert for this activity would have been triggered as the threshold was set to >4 events.
+
+### Apache Attack Dashboard
+
+![Screenshot 2025-02-28 at 2 10 56 PM](https://github.com/user-attachments/assets/b381fc9c-d627-419a-8d9d-82b9574d7b9a)
+![Screenshot 2025-02-28 at 2 11 28 PM](https://github.com/user-attachments/assets/99218e0c-7a24-4bda-9057-a3d30ff061a5)
+
 
 ### Task 6: Dashboard Analysis for Time Chart of HTTP Methods
-1. **Analyzed the new dashboard results** and answered the following questions:
-   - Did anything stand out as suspicious? [Answer here]
-   - Which method seems to be used in the attack? [Answer here]
-   - At what times did the attack start and stop? [Answer here]
-   - What is the peak count of the top method during the attack? [Answer here]
+
+![Screenshot 2025-02-28 at 2 12 56 PM](https://github.com/user-attachments/assets/78ae450e-c0c7-40fe-be98-a1a9e672f81b)
+![Screenshot 2025-02-28 at 2 13 14 PM](https://github.com/user-attachments/assets/143e372b-da20-475e-a55d-5173b5cb360a)
+
+### Findings
+- There was a significant spike in HTTP `GET` activity at 6:00 pm (729).
+- There was a significant spike in HTTP `POST` activity at 8:00 pm (1296).
 
 ### Task 7: Dashboard Analysis for Cluster Map
-1. **Analyzed the cluster map results** and answered the following questions:
-   - Does anything stand out as suspicious? [Answer here]
-   - Which new location (city, country) on the map has a high volume of activity? [Answer here]
-   - What is the count of that city? [Answer here]
+
+![Screenshot 2025-02-28 at 2 22 38 PM](https://github.com/user-attachments/assets/850581be-8014-4325-bfce-52e6d97e2be7)
+![Screenshot 2025-02-28 at 2 26 27 PM](https://github.com/user-attachments/assets/afdf0cd3-004b-4af2-be01-ecb7a652202f)
+
+### Findings
+- There was a large amount of activity in Ukraine during the attack timeframe. This country does not have a history of high web traffic to the VSI servers and is considered to be abnormal.
+- The total number of activities from Ukraine was 432.
+- Additional research illustrates that the web traffic originated from Kharkiv, Ukraine.
 
 ### Task 8: Dashboard Analysis for URI Data
 1. **Analyzed the URI data panel** and answered the following questions:
