@@ -203,7 +203,7 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
   - `A user account was locked out` | Timeframe: 1:00 am - 2:00 am | Peak Count: 896
   - `An attempt was made to reset an accounts password` | Timeframe: 9:00 am - 10:00 am | Peak Count: 1258
   - `An account was successfully logged on` | Timeframe: 11:00 am | Peak Count: 196
-- The signature ID for Windows Successful Login did not match the label for signature activity in the dataset and therefore did not trigger an alert.
+- The signature ID for Windows Successful Login did not match the label for `An account was successfully logged on` in the dataset and therefore did not trigger an alert.
 
 ### Task 8: Dashboard Analysis for Users
 
