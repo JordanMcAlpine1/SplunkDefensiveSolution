@@ -154,20 +154,22 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 ![Screenshot 2025-02-27 at 1 18 16 PM](https://github.com/user-attachments/assets/f4305d93-cc7f-4e88-bc70-625393b88add)
 
 ### Findings
-- There was an increase in `high` severity events during the attack (329 to 1111)
+- There was a signficant increase in `high` severity events during the attack (329 to 1111).
 
 ### Task 2: Report Analysis for Failed Activities
-- Accessed the "Reports" tab and selected the report for analyzing activities.
-- Changed the source from `windows_server_logs.csv` to `windows_server_attack_logs.csv`.
-- Saved and reviewed the updated results.
-- Answered the review question on whether any suspicious changes in failed activities were detected.
+
+![Screenshot 2025-02-27 at 1 21 23 PM](https://github.com/user-attachments/assets/0766bed1-83bb-4a49-aa19-54d6a4f7eb5c)
+
+### Findings
+- There was a notable increase in `success` events during the attack (4622 to 5856).
+- There was a slight decrease in `failure` events during the attack (142 to 93)
 
 ### Task 3: Alert Analysis for Failed Windows Activity
-- Accessed the "Alerts" tab and selected the alert for suspicious volume of failed activities.
-- Changed the source from `windows_server_logs.csv` to `windows_server_attack_logs.csv`.
-- Reviewed the updated results and answered the review questions:
-  - Detected the volume of failed activity and identified the count and time.
-  - Assessed if the alert would be triggered and determined whether the threshold needed adjustments.
+
+![Screenshot 2025-03-04 at 6 58 21 PM](https://github.com/user-attachments/assets/7acbf927-3b59-46a2-846b-f041aa23dd36)
+
+### Findings
+- There was a spike in `failure` events during the attack, specifically at 8:00 am.
 
 ### Task 4: Alert Analysis for Successful Logins
 - Accessed the "Alerts" tab and selected the alert for suspicious volume of successful logins.
