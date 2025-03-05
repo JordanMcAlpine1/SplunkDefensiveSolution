@@ -274,18 +274,18 @@ These visualizations were added to the **Apache Web Server Monitoring** dashboar
 ### Findings
 - There was a significant deacrease in the referring domain count during the attack timeframe.
 - Top 5 notable changes:
-   - http://www.semicomplete.com (3038 to 764)
-   - http://semicomplete.com (2001 to 572)
-   - http://www.google.com (123 to 37)
-   - https://www.google.com (105 to 25)
-   - http://stackoverflow.com (34 to 15)
+   - `http://www.semicomplete.com` (3038 to 764)
+   - `http://semicomplete.com` (2001 to 572)
+   - `http://www.google.com` (123 to 37)
+   - `https://www.google.com` (105 to 25)
+   - `http://stackoverflow.com` (34 to 15)
 
 ### Task 3: Report Analysis for HTTP Response Codes
 
 ![Screenshot 2025-02-28 at 1 33 22 PM](https://github.com/user-attachments/assets/6bc910ac-0358-4692-beff-6a58a0149166)
 
 ### Findings
-- There was a significant increase in `404` HTTP response code count during the attack timeframe (213 to 679).
+- There was a significant increase in the `404` HTTP response code count during the attack timeframe (213 to 679).
 
 ### Task 4: Alert Analysis for International Activity
 1. **Accessed the “Alerts” tab** and selected the alert for suspicious international activity.
